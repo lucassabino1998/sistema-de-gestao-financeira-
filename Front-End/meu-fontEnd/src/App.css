@@ -1,0 +1,85 @@
+/* ÁREA DOS DASHBOARDS */
+.dashboard-chart-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 420px;
+}
+
+.dashboard-chart-header {
+  margin-bottom: 12px;
+}
+
+.dashboard-chart-title {
+  margin: 0;
+  color: #1e2a38;
+}
+
+.dashboard-chart-total {
+  margin: 8px 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ÁREA DO GRÁFICO */
+.dashboard-chart-wrapper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESUMO/LISTA AO LADO */
+.dashboard-chart-side {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* GRID INTERNO DO DASHBOARD */
+.dashboard-chart-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+/* BLOCO DO GRÁFICO DE LINHA */
+.dashboard-line-card {
+  width: 100%;
+  height: 340px;
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-line-wrapper {
+  width: 100%;
+  height: 260px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .dashboard-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-chart-wrapper {
+    height: 260px;
+  }
+
+  .dashboard-line-card {
+    height: auto;
+  }
+
+  .dashboard-line-wrapper {
+    height: 240px;
+  }
+}
